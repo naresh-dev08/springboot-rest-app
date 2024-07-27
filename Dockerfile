@@ -1,4 +1,4 @@
 FROM openjdk:17
-COPY target/docker-springboot-webapp.jar /usr/web/
+COPY target/docker-springboot-webapp.jar /usr/app/
 WORKDIR /usr/app/
-ENTRYPOINT [ "java", "-jar", "docker-springboot-webapp.jar" ]
+ENTRYPOINT ["java", "-jar", "docker-springboot-webapp.jar"]
